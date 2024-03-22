@@ -4348,12 +4348,27 @@ li .nftmax__toggle:before {
 	height: initial !important;
 	font-size: 18px
 }
+.nftmax__item-button--copy {
+	background: 0 0;
+	padding: 0;
+	border: none;
+	color: #5356FB;
+	border-bottom: 1px solid;
+	border-radius: 0;
+	padding: 0 !important;
+	line-height: initial;
+	height: initial !important;
+	font-size: 18px
+}
 
 .nftmax__item-button--single {
 	padding: 14px 22px !important
 }
 
 .nftmax__item-button--cancel {
+	padding: 0 !important
+}
+.nftmax__item-button--copy {
 	padding: 0 !important
 }
 
@@ -6804,4 +6819,7 @@ blockquote {
 	border-radius: 8px;
 	border-bottom: 2px solid #f539f8;
 	box-shadow: 0 0 5px #0000000d;
+}
+.text-response {
+	color: #101324 !important;
 }

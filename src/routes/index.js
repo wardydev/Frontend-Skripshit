@@ -1,4 +1,4 @@
-import { Components, Prompts } from "../pages";
+import { Components, Prompts, TitleIdeas } from "../pages";
 
 const coreRoutes = [
   {
@@ -8,8 +8,13 @@ const coreRoutes = [
   },
   {
     path: "/components",
-    title: "components",
+    title: "Components",
     component: Components,
+  },
+  {
+    path: "/title-idea",
+    title: "Title Idea",
+    component: TitleIdeas,
   },
 ];
 
