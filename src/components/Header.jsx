@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header className="nftmax-header">
@@ -24,107 +26,22 @@ const Header = () => {
               </div>
               <div className="nftmax-header__right">
                 <div className="nftmax-header__group">
-                  <div className="nftmax-header__amount">
-                    <div className="nftmax-amount__icon">
-                      <img src="/images/icons/bag-icon.svg" alt="#" />
-                    </div>
-                    <div className="nftmax-amount__digit">
-                      <span>$</span> 234,435.34
-                    </div>
-                    <div className="nftmax-header__plus">
-                      <a href="#">
-                        <img src="/images/icons/plus-icon.svg" alt="#" />
-                      </a>
-                    </div>
-
-                    <div className="nftmax-balance">
-                      <h3 className="nftmax-balance__title">Your Balance</h3>
-
-                      <ul className="nftmax-balance_list">
-                        <li>
-                          <div className="nftmax-balance-info">
-                            <div className="nftmax-balance__img">
-                              <img src="/images/icons/wallet-1.png" alt="#" />
-                            </div>
-                            <h4 className="nftmax-balance-name">MetaMask</h4>
-                          </div>
-                          <div className="nftmax-balance-amount">
-                            <h4 className="nftmax-balance-amount nftmax-scolor">
-                              75320 ETH
-                              <span className="nftmax-balance-usd">
-                                (773.69 USD)
-                              </span>
-                            </h4>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="nftmax-balance-info">
-                            <div className="nftmax-balance__img">
-                              <img src="/images/icons/wallet-2.png" alt="#" />
-                            </div>
-                            <h4 className="nftmax-balance-name">
-                              Coinbase Wallet
-                            </h4>
-                          </div>
-                          <div className="nftmax-balance-amount">
-                            <h4 className="nftmax-balance-amount nftmax-scolor">
-                              75320 ETH
-                              <span className="nftmax-balance-usd">
-                                (773.69 USD)
-                              </span>
-                            </h4>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="nftmax-balance-info">
-                            <div className="nftmax-balance__img">
-                              <img src="/images/icons/wallet-3.png" alt="#" />
-                            </div>
-                            <h4 className="nftmax-balance-name">Bitski</h4>
-                          </div>
-                          <div className="nftmax-balance-amount">
-                            <h4 className="nftmax-balance-amount nftmax-scolor">
-                              75320 ETH
-                              <span className="nftmax-balance-usd">
-                                (773.69 USD)
-                              </span>
-                            </h4>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="nftmax-balance-info">
-                            <div className="nftmax-balance__img">
-                              <img src="/images/icons/wallet-4.png" alt="#" />
-                            </div>
-                            <h4 className="nftmax-balance-name">
-                              WalletConnect
-                            </h4>
-                          </div>
-                          <div className="nftmax-balance-amount">
-                            <h4 className="nftmax-balance-amount nftmax-scolor">
-                              75320 ETH
-                              <span className="nftmax-balance-usd">
-                                (773.69 USD)
-                              </span>
-                            </h4>
-                          </div>
-                        </li>
-                      </ul>
-
-                      <div
-                        className="nftmax-balance__button"
-                        data-bs-toggle="modal"
-                        data-bs-target="#add_wallet"
-                      >
-                        <a
-                          href="#"
-                          className="nftmax-btn nftmax-btn__bordered bg radius"
-                        >
-                          Add Money
-                        </a>
+                  <Link to="/deposit" href="">
+                    <div className="nftmax-header__amount">
+                      <div className="nftmax-amount__icon">
+                        <img src="/images/icons/bag-icon.svg" alt="#" />
+                      </div>
+                      <div className="nftmax-amount__digit">
+                        <span>$</span> 234,435.34
+                      </div>
+                      <div className="nftmax-header__plus">
+                        <img
+                          src="/images/icons/plus-icon.svg"
+                          alt="icon-plus"
+                        />
                       </div>
                     </div>
-                  </div>
+                  </Link>
 
                   <div className="nftmax-header__group-two">
                     <div className="nftmax-header__right">
